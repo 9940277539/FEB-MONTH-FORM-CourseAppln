@@ -1,14 +1,17 @@
+<!DOCTYPE html>
 <html>
-<title>REGISTRATON FORM</title>
-<BODY bgcolor="silver">
+  <head>
+<title>REGISTRATON FORM</title> </head>
+<body bgcolor="silver">
    <h2 align="center"> COURSE REGISTRATON FORM</h2>
    <form action="" method="post">
    
-   <table align="center"> 
-       <th bgcolor="black"> <font color="white">
-           BASIC INFORMATION </font>
-       </th> 
-   </table> <br>
+   <table align="center" border="2" bgcolor="gray"> 
+     <tr>
+       <th> 
+           BASIC INFORMATION 
+       </th>  </tr>
+   </table> <br> <br>
    <label>First Name:</label>
  <input type="text" name="name" placeholder="First Name" required>
  <label>Middle Name:</label>
@@ -37,14 +40,26 @@
   <label> Blood Group: </label> 
   <select name="slbloodgroup">
     <option></option>
-      <option>AB+</option>
-      <option>A+</option>
-      <option>B+</option>
-      <option>AB-</option>
-      <option>A-</option>
-      <option>B-</option>
-      <option>O-</option>
-      <option>O+</option> 
+      <option value="AB+">AB+</option>
+      <option value="A+">A+</option>
+      <option value="B+">B+</option>
+      <option value="AB-">AB-</option>
+      <option value="A-">A-</option>
+      <option value="B-">B-</option>
+      <option value="O-">O-</option>
+      <option value="O+">O+</option> 
+</select> 
+
+<label>  Id Proof</label>
+ <select name="slid">
+  <option></option>
+  <option value="Voter id">Voter id</option>
+  <option value="Pancard"> Pancard </option>
+  <option value="Adhar card"> Adhar card</option>
+  <option value="Driving Licence"> Driving Licence </option>
+  <option value="Ration card"> Ration card</option> 
+  <input type="text" name="id proof" placeholder="id number">
+  
 </select>
 <br><br>
 <label> Education: </label> <input type="checkbox" name="edu" value="Under Graduate">Under Graduate
@@ -52,59 +67,61 @@
   <label> Degree Qualification </label>
 <select name="slgraduate">
   <option></option>
-    <option>BSC</option>
-    <option>BCA</option>
-    <option>MSC</option>
-    <option>MBA-</option>
-    <option>B.COM</option>
-    <option>BBA</option>
-    <option>MCA</option>
-    <option>M.Phil</option> 
-    <option>BE EEE</option> 
-    <option>BE C.S</option> 
-    <option>BE ECA</option> 
-    <option>MBBS</option> 
+    <option value="BSC">BSC</option>
+    <option value="BCA">BCA</option>
+    <option value="MSC">MSC</option>
+    <option value="MBA">MBA-</option>
+    <option value="B.COM">B.COM</option>
+    <option value="BBA">BBA</option>
+    <option value="MCA">MCA</option>
+    <option value="M.phil">M.Phil</option> 
+    <option value="BE EEE">BE EEE</option> 
+    <option value="BE C.S">BE C.S</option> 
+    <option value="BE ECA">BE ECA</option> 
+    <option value="MBBS">MBBS</option> 
 </select>
   <br><br> 
-  <table align="center"> 
-    <th bgcolor="black"> <font color="white">
-        CONTACT INFORMATION </font>
-    </th> 
+  <table align="center" border="2" bgcolor="gray"> 
+    <tr>
+    <th> 
+        CONTACT INFORMATION 
+    </th>  </tr> 
 </table> <br>
  <label> Father name:</label>
  <input type="text" name="name" placeholder="Father name"> 
  <label> Father occupation:</label>
- <input type="text" name="occupation">
+ <input type="text" name="occupation"> <br><br>
  <label> Contact Number:</label>
  <input type="number" name="ph.no" required> 
  <br><br>
  <label> Mother name:</label>
  <input type="text" name="name" placeholder="Mother name"> 
  <label> Mother Occupation:</label>
- <input type="text" name="occupation">
+ <input type="text" name="occupation"> <br><br>
  <label> Contact Number:</label>
  <input type="number" name="ph.no" required>  <br><br>
  <label>Permanat Address</label> <textarea></textarea>
  <label>Mailing Address</label> <textarea></textarea>
  <br><br> 
-  <table align="center"> 
-    <th bgcolor="black"> <font color="white">
-        COURSE INFORMATION </font>
+  <table align="center" bgcolor="gray" border="2"> 
+    <tr>
+    <th > 
+        COURSE INFORMATION  </tr>
     </th> 
 </table> <br>
 <label> Course: </label>
 <select name="slcourse" multiple>
   <option></option>
-  <option>HTML</option>
-  <option>JAVA</option>
-  <option>CSS</option>
-  <option>PYTHON</option>
-  <option>C</option>
-  <option>C++</option>
-  <option>WEBDESIGNING</option>
-  <option>DATA SCIENCE</option>
-  <option>FRONT END</option>
-  <option>BACK END</option>
+  <option value="HTML">HTML</option>
+  <option value="JAVA">JAVA</option>
+  <option value="CSS">CSS</option>
+  <option value="PYTHON">PYTHON</option>
+  <option value="C">C</option>
+  <option value="C++">C++</option>
+  <option value="WEBDESIGNING">WEBDESIGNING</option>
+  <option value="DATA SCIENCE">DATA SCIENCE</option>
+  <option value="FRONT END">FRONT END</option>
+  <option value="BACK END">BACK END</option>
 </select>
 
 <label> Batch: </label> <input type="checkbox" name="Batch" value="Weekend Batch">Weekend Batch
@@ -113,7 +130,7 @@
   <label> Payment Option</label> 
   <input type="radio" name="Payment" value="Online"> Online
   <input type="radio" name="Payment" value="Offline"> Offline <BR><BR>
-    <label> Digtal Signature</label> 
+    <label> Digital Signature</label> 
     <input type="file"> 
     <label> Upload photo</label> 
     <input type="file"> <br><br><br><br>
@@ -131,6 +148,6 @@
 
    </form>
 
-</BODY>
+  </body>
 
 </html>
